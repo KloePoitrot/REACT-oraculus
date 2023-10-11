@@ -1,0 +1,146 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+
+*{
+    margin:0;
+    font-family:'roboto', serif;
+    color:#908F8F;
+    font-weight: 300;
+}
+a{
+    text-decoration: none;
+}
+body div{
+    display: flex;
+}
+
+
+/* 
+===============================================================
+===============================================================
+                            Header
+===============================================================
+===============================================================
+*/
+header{
+    width:300px;
+    border-right:1px solid #BFBFBF;
+    height:100vh;
+    position: sticky;
+    top:0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+header, header a{
+    color:#909090;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+header ul{
+    padding:0;
+    list-style: none;
+}
+header img{
+    border-bottom:1px solid #BFBFBF
+}
+
+/* Main navigation */
+.nav{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap:40px
+}
+
+/* Bottom Navigation */
+.horosNav{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.horosNav li{
+    padding:1.5rem;
+    text-align: center;
+    border-top:1px solid #BFBFBF;
+}
+.horosNav li:nth-child(1){
+    border-right:1px solid #BFBFBF;
+}
+.horosNav i{
+    font-size:1.5rem
+}
+
+
+/* 
+===============================================================
+===============================================================
+                            Body
+===============================================================
+===============================================================
+*/
+/* left images */
+body{
+    background-image: url(../assets/Background-right.png);
+    background-repeat:no-repeat;
+    background-position: 110%;
+    background-size:contain;
+}
+.imageright{
+    position: absolute;
+    right:10%;
+    width:18%;
+    top:34%
+}
+
+/* Content */
+main{
+    height: 100vh;
+    overflow: auto;
+}
+.maxwidth{
+    width:58%;
+    padding:4rem;
+    flex-direction: column;
+    display: flex;
+}
+span{
+    font-weight: 500;
+    color: #3F3F3F;
+}
+h1, h2{
+    color: #3F3F3F;
+    font-weight: 400;
+}
+h1, h2, h3{
+    text-transform: uppercase;
+}
+.titleHeader{
+    font-size:40px
+}
+.secondHeader{
+    font-size:20px
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+    margin-bottom:30px
+}
+section{
+    height:100%;
+    margin:8rem 0
+}
+section p{
+    margin:20px 0
+}
+
+/* Top bar "nav" */
+.mainNav{
+    display: flex;
+    gap:30px;
+    margin-left:4rem;
+    text-transform: uppercase;
+}
+.mainNav article{
+    border-top:2px solid #BFBFBF;
+    padding-top:20px
+}
